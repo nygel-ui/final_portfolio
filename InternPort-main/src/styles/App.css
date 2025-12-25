@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import './colors.css';
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi/Satoshi-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./Satoshi-Variable.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./Satoshi-Variable.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./Satoshi-Variable.ttf') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-white);
+    font-family: 'Satoshi', 'Inter', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
