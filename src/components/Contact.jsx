@@ -11,13 +11,13 @@ const Contact = () => {
             <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-gray-300 mb-4 md:mb-8">GET IN TOUCH</h2>
             <hr className="w-full border-t-2 border-gray-600 opacity-50 mb-4 md:mb-8" />
             <div className="flex space-x-4 md:space-x-10">
-                <a href="https://github.com/walts-14" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-4xl text-white hover:bg-blue-400 transition">
+                <a href="https://github.com/nygel-ui" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-4xl text-white hover:bg-blue-400 transition">
                     <img src={github} alt="GitHub" className="w-10 h-10 md:w-15 md:h-15" />
                 </a>
-                <a href="https://linkedin.com/in/johnewalter-almcd" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-4xl text-white hover:bg-blue-400 transition">
+                <a href="https://www.linkedin.com/in/dheyvid-kyle-pe-2a296436a/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-4xl text-white hover:bg-blue-400 transition">
                     <img src={linkedin} alt="LinkedIn" className="w-10 h-10 md:w-15 md:h-15" />
                 </a>
-                <a href="https://www.facebook.com/johnewalter.alcala/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-4xl text-white hover:bg-blue-400 transition">
+                <a href="https://www.facebook.com/dheyvidkyle.pe" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-4xl text-white hover:bg-blue-400 transition">
                     <img src={facebook} alt="Facebook" className="w-10 h-10 md:w-15 md:h-15" />
                 </a>
             </div>
