@@ -8,7 +8,7 @@ import Code from './projects/Code';
 import { useFadeInOnScroll } from '../Hook';
 
 const categories = [
-                    'Graphics', 
+                    // 'Graphics', 
                     // 'Illustrator', 
                     // 'Videos', 
                     // 'After Effects',
