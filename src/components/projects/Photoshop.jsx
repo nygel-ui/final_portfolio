@@ -23,9 +23,9 @@ import poster8 from '../../assets/Essensa/Poster/NDO 7-6-25.jpg'
 import poster9 from '../../assets/Essensa/Poster/NDOfriday3.png'
 
 const photoshopProjects = [
-    { title: 'Apple Promo Poster', image: poster1 },
-    { title: 'EBP Friday Promo 1', image: poster2 },
-    { title: 'EBP Friday Promo 2', image: poster3 },
+    { title: 'Toyota Marilao Bulacan Company ID lace', image: poster1 },
+    { title: 'Hilux Pubmat', image: poster2 },
+    { title: 'Bonifacio Day Pubmat', image: poster3 },
     { title: 'EBP Friday Promo 3', image: poster4 },
     { title: 'Glykozee Promo 1', image: poster5 },
     { title: 'Glykozee Promo 2', image: poster6 },
