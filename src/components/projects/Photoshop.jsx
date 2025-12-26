@@ -48,7 +48,7 @@ const photoshopProjects = [
 
 
 const Photoshop = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     const [current, setCurrent] = useState(0);
     const lastWheel = useRef(0);
 
@@ -76,24 +76,69 @@ const Photoshop = () => {
     const onWheel = (e) => {
         // throttle wheel events to avoid overscrolling
         const now = Date.now();
-        if (now - lastWheel.current < 180) return;
+        if (now - lastWheel.current < 120) return;
         lastWheel.current = now;
         if (e.deltaY > 0) next();
         else prev();
         e.preventDefault();
     };
 
+    const scrollRef = useRef(null);
+
+    const scrollToIndex = (index) => {
+        const container = scrollRef.current;
+        if (!container) return;
+        const child = container.children[index];
+        if (child) {
+            container.scrollTo({ left: child.offsetLeft - 8, behavior: 'smooth' });
+        }
+    };
+
+    // when current changes while scroller open, ensure it is visible
+    useEffect(() => {
+        if (isOpen) scrollToIndex(current);
+    }, [current, isOpen]);
+
     return (
         <div className="w-full max-w-5xl mx-auto">
-            <div className="flex justify-end px-5 py-2">
-                <button
-                    className="px-4 py-2 btn-primary rounded-full font-semibold"
-                    onClick={() => openAt(0)}
-                    aria-label="Open gallery"
-                >
-                    View Gallery
-                </button>
-            </div>
+
+            {/* Sticky scroller with thumbnails and counter (always visible) */}
+            {isOpen && (
+                <div className="sticky top-20 z-30 bg-white/60 backdrop-blur-sm px-5 py-3">
+                    <div className="relative flex items-center">
+                        <button
+                            className="p-2 rounded-full bg-white/90 text-primary shadow mr-2"
+                            onClick={() => { prev(); scrollToIndex(current - 1 < 0 ? photoshopProjects.length - 1 : current - 1); }}
+                            aria-label="Scroll left"
+                        >&larr;</button>
+
+                        <div
+                            ref={scrollRef}
+                            className="flex gap-4 overflow-x-auto scrollbar-hide py-2 w-full"
+                            style={{ scrollBehavior: 'smooth', scrollSnapType: 'x mandatory' }}
+                        >
+                            {photoshopProjects.map((proj, idx) => (
+                                <div
+                                    key={idx}
+                                    className={`min-w-[220px] min-h-[140px] rounded-xl p-1 flex-shrink-0 cursor-pointer transition-transform ${idx === current ? 'scale-105' : ''}`}
+                                    style={{ scrollSnapAlign: 'center', border: idx === current ? '3px solid var(--color-accent)' : '1px solid transparent' }}
+                                    onClick={() => setCurrent(idx)}
+                                >
+                                    <img src={proj.image} alt={proj.title} className="w-full h-full object-cover rounded" />
+                                </div>
+                            ))}
+                        </div>
+
+                        <button
+                            className="p-2 rounded-full bg-white/90 text-primary shadow ml-2"
+                            onClick={() => { next(); scrollToIndex(current + 1 >= photoshopProjects.length ? 0 : current + 1); }}
+                            aria-label="Scroll right"
+                        >&rarr;</button>
+
+                        <div className="ml-4 text-sm text-primary font-semibold">{current + 1} / {photoshopProjects.length}</div>
+                    </div>
+                </div>
+            )}
 
             <div className="grid grid-rows-2 grid-flow-col gap-6 overflow-x-auto scrollbar-hide px-5 py-5">
                 {photoshopProjects.map((proj, idx) => (
@@ -111,38 +156,29 @@ const Photoshop = () => {
                 ))}
             </div>
 
+            {/* Toggleable horizontal scroller (replaces modal) */}
             {isOpen && (
-                <div
-                    className="fixed inset-0 z-50 flex items-center justify-center"
-                    onWheel={onWheel}
-                    aria-modal="true"
-                    role="dialog"
-                >
-                    <div className="absolute inset-0 bg-black/60" onClick={close} />
-
-                    <div className="relative max-w-[90%] max-h-[90%] flex items-center justify-center">
+                <div className="w-full px-5 py-3">
+                    <div className="relative flex items-center">
                         <button
-                            className="absolute left-0 ml-2 p-2 rounded-full bg-white/90 text-primary shadow"
-                            onClick={prev}
-                            aria-label="Previous"
+                            className="p-2 rounded-full bg-white/90 text-primary shadow mr-2"
+                            onClick={() => { prev(); scrollToIndex(current - 1 < 0 ? photoshopProjects.length - 1 : current - 1); }}
+                            aria-label="Scroll left"
                         >&larr;</button>
 
-                        <div className="bg-white rounded-md p-2 max-w-full max-h-full">
-                            <img src={photoshopProjects[current].image} alt={photoshopProjects[current].title} className="max-w-[80vw] max-h-[80vh] object-contain rounded" />
-                            <div className="mt-2 text-center text-sm text-muted">{photoshopProjects[current].title}</div>
+                        <div ref={scrollRef} className="flex gap-4 overflow-x-auto scrollbar-hide py-2 w-full">
+                            {photoshopProjects.map((proj, idx) => (
+                                <div key={idx} className={`min-w-[220px] min-h-[140px] rounded-xl p-1 flex-shrink-0 cursor-pointer border ${idx === current ? 'border-accent' : 'border-transparent'}`} onClick={() => setCurrent(idx)}>
+                                    <img src={proj.image} alt={proj.title} className="w-full h-full object-cover rounded" />
+                                </div>
+                            ))}
                         </div>
 
                         <button
-                            className="absolute right-0 mr-2 p-2 rounded-full bg-white/90 text-primary shadow"
-                            onClick={next}
-                            aria-label="Next"
+                            className="p-2 rounded-full bg-white/90 text-primary shadow ml-2"
+                            onClick={() => { next(); scrollToIndex(current + 1 >= photoshopProjects.length ? 0 : current + 1); }}
+                            aria-label="Scroll right"
                         >&rarr;</button>
-
-                        <button
-                            className="absolute top-2 right-2 p-2 rounded-full bg-white/90 text-primary shadow"
-                            onClick={close}
-                            aria-label="Close"
-                        >✕</button>
                     </div>
                 </div>
             )}
