@@ -29,13 +29,13 @@ const Illustrator = () => {
                     {/* First row */}
                     <div className="flex flex-row justify-center items-center gap-5 md:gap-7 w-full max-w-4xl mb-5">
                         {/* Mallow Bites (rectangular) */}
-                        <div className="bg-[#0a192f] rounded-2xl flex items-center justify-center shadow-lg p-1 md:p-2 transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+                        <div className="bg-surface rounded-2xl flex items-center justify-center shadow-lg p-1 md:p-2 transition-all duration-300 hover:-translate-y-2 hover:scale-105 border-accent"
                             style={{ boxShadow: '0 0 16px 2px #2563eb55' }}
                         >
                             <img src={MallowBites} alt="Mallow Bites" className="w-[180px] h-[110px] md:w-[320px] md:h-[180px] lg:w-[420px] lg:h-[255px] object-fill rounded-2xl" />
                         </div>
                         {/* Vanilla Sprinkle (circle, carousel) */}
-                        <div className="flex items-center justify-center bg-[#0a192f] shadow-lg p-1 transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+                        <div className="flex items-center justify-center bg-btn shadow-lg p-1 transition-all duration-300 hover:-translate-y-2 hover:scale-105"
                             style={{ borderRadius: '50%', boxShadow: '0 0 16px 2px #2563eb55' }}
                         >
                             <img src={vanillaImages[vanillaIndex]} alt="Vanilla Sprinkle" className="w-[120px] h-[120px] md:w-[200px] md:h-[200px] lg:w-[280px] lg:h-[280px] object-contain rounded-full" />
@@ -44,15 +44,15 @@ const Illustrator = () => {
                     {/* Third row */}
                     <div className="flex flex-row justify-center items-center gap-5 md:gap-8 w-full max-w-4xl">
                         {/* Pang-Masa (rectangular) */}
-                        <img src={PangMasa} alt="Pang-Masa" className="bg-[#0a192f] w-[150px] h-[90px] md:w-[240px] md:h-[140px] lg:w-[365px] lg:h-[220px] object-fill rounded-2xl p-1 md:p-2 transition-all duration-300 hover:-translate-y-2 hover:scale-105" style={{ boxShadow: '0 0 16px 2px #2563eb55' }} />
+                        <img src={PangMasa} alt="Pang-Masa" className="bg-btn w-[150px] h-[90px] md:w-[240px] md:h-[140px] lg:w-[365px] lg:h-[220px] object-fill rounded-2xl p-1 md:p-2 transition-all duration-300 hover:-translate-y-2 hover:scale-105" style={{ boxShadow: '0 0 16px 2px rgba(59,130,246,0.08)' }} />
                         {/* Lumiere Production (circle) */}
-                        <div className="flex items-center justify-center bg-[#0a192f] shadow-lg px-1 py-1 md:px-2 md:py-2 transition-all duration-300 hover:-translate-y-2 hover:scale-105"
+                        <div className="flex items-center justify-center bg-btn shadow-lg px-1 py-1 md:px-2 md:py-2 transition-all duration-300 hover:-translate-y-2 hover:scale-105"
                             style={{ borderRadius: '6%', boxShadow: '0 0 16px 2px #2563eb55' }}
                         >
                             <img src={Lumiere} alt="Lumiere Production" className="w-[110px] h-[90px] md:w-[180px] md:h-[140px] lg:w-[280px] lg:h-[220px] object-contain" />
                         </div>
                         {/* Brew Bounty (hexagon) */}
-                        <img src={BrewBounty} alt="Brew Bounty" className="bg-[#0a192f] w-[90px] h-[90px] md:w-[160px] md:h-[140px] lg:w-[250px] lg:h-[220px] object-contain rounded-2xl py-1 md:py-2 transition-all duration-300 hover:-translate-y-2 hover:scale-105" style={{ boxShadow: '0 0 16px 2px #2563eb55' }} />
+                        <img src={BrewBounty} alt="Brew Bounty" className="bg-btn w-[90px] h-[90px] md:w-[160px] md:h-[140px] lg:w-[250px] lg:h-[220px] object-contain rounded-2xl py-1 md:py-2 transition-all duration-300 hover:-translate-y-2 hover:scale-105" style={{ boxShadow: '0 0 16px 2px rgba(59,130,246,0.08)' }} />
                     </div>
                 </div>
             </div>

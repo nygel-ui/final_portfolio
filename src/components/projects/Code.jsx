@@ -27,21 +27,21 @@ const Code = () => {
             {codeProjects.map((proj, idx) => (
                 <div
                     key={idx}
-                    className="bg-[#172133] rounded-2xl p-4 md:p-5 flex-shrink-0 flex flex-col items-start shadow-lg border border-transparent transition-all duration-300 w-[280px] md:w-[350px] lg:w-[450px] min-h-[400px] md:min-h-[450px] transform hover:-translate-y-2 hover:scale-105 hover:border-blue-400"
-                    style={{ boxShadow: '0 0 16px 2px #2563eb55' }}
+                    className="bg-surface rounded-2xl p-4 md:p-5 flex-shrink-0 flex flex-col items-start shadow-lg border border-transparent transition-all duration-300 w-[280px] md:w-[350px] lg:w-[450px] min-h-[400px] md:min-h-[450px] transform hover:-translate-y-2 hover:scale-105 border-accent"
+                    style={{ boxShadow: '0 0 16px 2px rgba(59,130,246,0.08)' }}
                 >
-                    <div className="w-full h-48 md:h-60 bg-[#232b3a] rounded-xl flex items-center justify-center mb-4 md:mb-5 overflow-hidden">
+                    <div className="w-full h-48 md:h-60 bg-btn rounded-xl flex items-center justify-center mb-4 md:mb-5 overflow-hidden">
                         <img
                             src={proj.image}
                             alt={proj.title}
                             className="w-full h-full object-fill rounded-xl"
                         />
                     </div>
-                    <span className="text-blue-400 font-bold text-base md:text-lg lg:text-xl mb-2 leading-tight">
+                    <span className="text-accent font-bold text-base md:text-lg lg:text-xl mb-2 leading-tight">
                         {proj.title}
                     </span>
                     {proj.description && (
-                        <span className="text-sm md:text-base lg:text-lg leading-snug" style={{ color: '#7791A9' }}>
+                        <span className="text-sm md:text-base lg:text-lg leading-snug text-muted">
                             {proj.description}
                         </span>
                     )}

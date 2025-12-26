@@ -49,10 +49,10 @@ const Figma = () => {
                     href={proj.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#172133] rounded-2xl p-4 md:p-5 flex-shrink-0 flex flex-col items-start shadow-lg border border-transparent transition-all duration-300 w-[280px] md:w-[350px] min-h-[400px] md:min-h-[450px] hover:border-blue-400 transform hover:-translate-y-2 hover:scale-105"
+                    className="bg-surface rounded-2xl p-4 md:p-5 flex-shrink-0 flex flex-col items-start shadow-lg border border-transparent transition-all duration-300 w-[280px] md:w-[350px] min-h-[400px] md:min-h-[450px] transform hover:-translate-y-2 hover:scale-105 border-accent"
                     style={{ boxShadow: '0 0 16px 2px #2563eb55' }}
                 >
-                    <div className="w-full h-48 md:h-60 bg-[#232b3a] rounded-xl flex items-center justify-center mb-4 md:mb-5 overflow-hidden">
+                    <div className="w-full h-48 md:h-60 bg-btn rounded-xl flex items-center justify-center mb-4 md:mb-5 overflow-hidden">
                         <img
                             src={proj.image}
                             alt={proj.title}

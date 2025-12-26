@@ -23,14 +23,10 @@ const Home = () => {
                 </h1>
                 <h3 className="text-base sm:text-lg md:text-3xl font-semibold text-white ">a graphic designer, video editor, game asset creator, UI/UX designer, front-end developer, and content creator.</h3>
                 <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 mt-5 text-lg sm:text-xl md:text-2xl h-auto sm:h-20 w-full">
-                    <a
-                        href={cv}
-                        download
-                        className="w-full sm:w-auto text-center px-8 py-4 bg-gray-800 text-white rounded-full font-semibold shadow hover:bg-blue-500 transition"
-                    >
+                    <a href={cv} download className="w-full sm:w-auto text-center px-8 py-4 btn-primary rounded-full font-semibold shadow transition">
                         Download CV
                     </a>
-                    <a href="#contact" className="w-full sm:w-auto text-center px-8 py-4 border-2 border-blue-400 text-blue-400 rounded-full font-semibold hover:bg-blue-400 hover:text-white transition">Contact me</a>
+                    <a href="#contact" className="w-full sm:w-auto text-center px-8 py-4 border-2 border-accent text-accent rounded-full font-semibold hover:bg-accent hover:text-primary transition">Contact me</a>
                 </div>
             </div>
             <div

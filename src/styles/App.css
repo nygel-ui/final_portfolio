@@ -31,10 +31,17 @@
 
 body {
     background: var(--color-bg);
-    color: var(--color-white);
+    color: var(--color-text);
     font-family: 'Satoshi', 'Inter', Arial, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+/* convenience mappings to avoid touching many components */
+.text-muted { color: var(--color-muted) !important; }
+.text-primary { color: var(--color-primary) !important; }
+.bg-surface { background-color: var(--color-surface) !important; }
+.bg-btn { background-color: var(--color-btn) !important; }
+.btn-primary { background-color: var(--color-accent); color: var(--color-bg); }

@@ -98,10 +98,10 @@ const Premierepro = () => {
             {premiereProjects.map((proj, idx) => (
                 <div
                     key={idx}
-                    className="bg-[#172133] rounded-2xl p-2 flex flex-col items-start transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
+                    className="bg-surface rounded-2xl p-2 flex flex-col items-start transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 border-accent"
                     style={{ boxShadow: '0 0 16px 2px #2563eb55' }}
                 >
-                    <div className="w-full h-65 bg-[#232b3a] rounded-xl flex items-center justify-center mb-5 overflow-hidden">
+                    <div className="w-full h-65 bg-btn rounded-xl flex items-center justify-center mb-5 overflow-hidden">
                         <video
                             src={proj.vid}
                             controls

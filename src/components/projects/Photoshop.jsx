@@ -54,7 +54,7 @@ const Photoshop = () => {
                 {photoshopProjects.map((proj, idx) => (
                     <div
                         key={idx}
-                        className="bg-[#0a192f] rounded-2xl flex items-center justify-center shadow-lg border border-transparent transition-all duration-300 p-1 min-w-[210px] min-h-[180px] transform hover:-translate-y-2 hover:scale-105 hover:border-blue-400"
+                        className="bg-surface rounded-2xl flex items-center justify-center shadow-lg border border-transparent transition-all duration-300 p-1 min-w-[210px] min-h-[180px] transform hover:-translate-y-2 hover:scale-105 border-accent"
                         style={{ boxShadow: '0 0 16px 2px #2563eb55' }}
                     >
                         <img src={proj.image} alt={proj.title} className="rounded-xl w-full h-full object-cover" />

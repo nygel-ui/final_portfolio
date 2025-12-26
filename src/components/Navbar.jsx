@@ -16,13 +16,13 @@ const Navbar = () => {
                 <span>{menuOpen ? '✕' : '☰'}</span>
             </button>
             <ul
-                className={`flex-col md:flex-row flex md:space-x-12 space-y-4 md:space-y-0 text-lg md:text-2xl font-bold font-satoshi items-center md:static absolute top-16 left-0 w-full md:w-auto bg-[#0a192f] md:bg-transparent transition-all duration-300 z-40 ${menuOpen ? 'flex' : 'hidden md:flex'}`}
+                className={`flex-col md:flex-row flex md:space-x-12 space-y-4 md:space-y-0 text-lg md:text-2xl font-bold font-satoshi items-center md:static absolute top-16 left-0 w-full md:w-auto bg-surface md:bg-transparent transition-all duration-300 z-40 ${menuOpen ? 'flex' : 'hidden md:flex'}`}
             >
-                <li><a href="#home" className="text-gray-200 hover:text-blue-400 transition">Home</a></li>
-                <li><a href="#intership" className="text-gray-200 hover:text-blue-400 transition">Intership</a></li>
-                <li><a href="#about" className="text-gray-200 hover:text-blue-400 transition">About</a></li>
-                <li><a href="#projects" className="text-gray-200 hover:text-blue-400 transition">Projects</a></li>
-                <li><a href="#contact" className="text-gray-200 hover:text-blue-400 transition">Contact</a></li>
+                <li><a href="#home" className="text-muted hover:text-accent transition">Home</a></li>
+                <li><a href="#intership" className="text-muted hover:text-accent transition">Intership</a></li>
+                <li><a href="#about" className="text-muted hover:text-accent transition">About</a></li>
+                <li><a href="#projects" className="text-muted hover:text-accent transition">Projects</a></li>
+                <li><a href="#contact" className="text-muted hover:text-accent transition">Contact</a></li>
             </ul>
         </nav>
     );
