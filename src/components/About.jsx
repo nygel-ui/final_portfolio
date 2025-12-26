@@ -23,8 +23,8 @@ const About = () => {
                     className={`flex-1 flex flex-col items-start justify-center space-y-4 md:space-y-6 max-w-3xl transition-all duration-1000 ease-in-out
                         ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 >
-                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">About Me</h1>
-                    <p className="text-gray-300 text-base sm:text-lg md:text-2xl leading-relaxed">
+                    <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-primary mb-4 md:mb-6">About Me</h1>
+                    <p className="text-muted text-base sm:text-lg md:text-2xl leading-relaxed">
                         I'm Dheyvid Kyle Pe — a graphic designer, video editor, game asset creator, UI/UX designer, front-end developer, and content creator. I specialize in crafting visually engaging designs, intuitive user experiences, and digital content that brings ideas to life.
                     </p>
                 </div>
