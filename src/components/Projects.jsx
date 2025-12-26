@@ -8,9 +8,9 @@ import Code from './projects/Code';
 import { useFadeInOnScroll } from '../Hook';
 
 const categories = [
-                    'Photoshop', 
+                    'Graphics', 
                     // 'Illustrator', 
-                    'Premiere Pro', 
+                    'Videos', 
                     'After Effects',
                     // 'Figma', 
                     // 'Code'
@@ -18,7 +18,7 @@ const categories = [
                     ];
 
 const Projects = () => {
-    const [active, setActive] = useState('Photoshop');
+    const [active, setActive] = useState('Graphics');
     const [headingRef, headingVisible] = useFadeInOnScroll();
     const [contentVisible, setContentVisible] = useState(true);
 
@@ -31,11 +31,11 @@ const Projects = () => {
 
     const renderContent = () => {
         switch (active) {
-            case 'Photoshop':
+            case 'Graphics':
                 return <Photoshop />;
             case 'Illustrator':
                 return <Illustrator />;
-            case 'Premiere Pro':
+            case 'Videos':
                 return <Premierepro />;
             case 'After Effects':
                 return <AfterEffects />;
