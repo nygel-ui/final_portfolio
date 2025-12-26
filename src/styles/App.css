@@ -45,14 +45,3 @@ html {
 .bg-surface { background-color: var(--color-surface) !important; }
 .bg-btn { background-color: var(--color-btn) !important; }
 .btn-primary { background-color: var(--color-accent); color: var(--color-bg); }
-
-/* hide scrollbar for scrollers (works for modern browsers) */
-.scrollbar-hide::-webkit-scrollbar { display: none; }
-.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-
-/* snapping helper for thumbnail scrollers */
-.thumb-snap { scroll-snap-type: x mandatory; }
-.thumb-snap > * { scroll-snap-align: center; }
-
-/* stronger selected thumbnail outline */
-.thumb-selected { box-shadow: 0 6px 18px rgba(59,130,246,0.15); transform: scale(1.05); border-radius: 8px; }
