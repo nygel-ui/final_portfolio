@@ -20,6 +20,8 @@ const Intership = () => {
                 <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
                     Toyota Marilao, Bulacan Inc. is an authorized Toyota dealership and service center located in Marilao, Bulacan, providing new vehicle sales and comprehensive after-sales services focused on quality and customer satisfaction. The company advocates environmental sustainability and community development by promoting eco-friendly practices, energy-efficient facilities, and initiatives that support local growth and responsible automotive service.
                 </p>
+             
+<br />
 
                 <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
                     The company advocates for environmental sustainability and community growth by setting new standards in eco-friendly automotive practices, using renewable energy and low-carbon facilities to reduce environmental impact, and promoting green initiatives that benefit customers and the local community. The dealership also supports local economic development by providing quality jobs, excellent customer service, and opportunities that help enrich the lives of people in Bulacan and nearby areas.
