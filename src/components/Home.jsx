@@ -1,6 +1,6 @@
 import React from 'react';
 import profile from '../assets/removebgprofile.png';
-import cv from '../assets/Almonacid.pdf';
+import cv from '../assets/Pe.pdf';
 import { useFadeInOnScroll } from '../Hook';
 
 const Home = () => {
