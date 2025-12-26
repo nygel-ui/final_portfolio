@@ -18,11 +18,7 @@ const Intership = () => {
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">About Essensa Naturale Inc.</h1>
 
                 <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
-                   Toyota Marilao, Bulacan is a major authorized Toyota car dealership and service center located along MacArthur Highway in Marilao, Bulacan. It offers new Toyota vehicles, sales support, and comprehensive after-sales services including maintenance, repairs, and appointments, all delivered with a focus on customer satisfaction and quality care. The dealership is also known for embracing environmentally friendly design and modern, energy-efficient facilities as part of its commitment to sustainable automotive service.
-                </p>
-
-                <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
-                Driven by their advocacy for environmental sustainability and community growth by setting new standards in eco-friendly automotive practices, using renewable energy and low-carbon facilities to reduce environmental impact, and promoting green initiatives that benefit customers and the local community. The dealership also supports local economic development by providing quality jobs, excellent customer service, and opportunities that help enrich the lives of people in Bulacan and nearby areas.
+                    Toyota Marilao, Bulacan Inc. is an authorized Toyota dealership and service center located in Marilao, Bulacan, providing new vehicle sales and comprehensive after-sales services focused on quality and customer satisfaction. The company advocates environmental sustainability and community development by promoting eco-friendly practices, energy-efficient facilities, and initiatives that support local growth and responsible automotive service.
                 </p>
 
             </div>
