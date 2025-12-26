@@ -24,14 +24,14 @@ const Contact = () => {
             <div className="flex flex-col md:flex-row items-center justify-center text-sm md:text-base text-gray-400 mt-4 md:mt-6 space-y-2 md:space-y-0 md:space-x-6">
                 <div className="flex items-center space-x-2">
                     <img src={contact} alt="Phone" className="w-8 h-8 md:w-10 md:h-10" />
-                    <span>+63 955-750-1035</span>
+                    <span>+63 968-397-4705</span>
                 </div>
                 <div className="flex items-center space-x-4">
                     <img src={email} alt="Email" className="w-9 h-9 md:w-11 md:h-11" />
-                    <span>johnewalteralmcd@gmail.com</span>
+                    <span>kyledheyvid@gmail.com</span>
                 </div>
             </div>
-            <p className="text-gray-300 mt-6 md:mt-10">© 2025 Johne Walter Almonacid</p>
+            <p className="text-gray-300 mt-6 md:mt-10">© Dheyvid Kyle Pe</p>
         </section>
     );
 };
