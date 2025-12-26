@@ -19,9 +19,9 @@ const Home = () => {
             >
                 <h2 className="text-2xl sm:text-3xl md:text-4xl text-white font-semibold">Hi There!</h2>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-                    I'm <span className="text-blue-400">Johne Walter Almonacid</span>
+                    I'm <span className="text-blue-400">Dheyvid Kyle Pe</span>
                 </h1>
-                <h3 className="text-base sm:text-lg md:text-3xl font-semibold text-white ">Front-end Developer. UI/UX Designer. Multimedia Creator.</h3>
+                <h3 className="text-base sm:text-lg md:text-3xl font-semibold text-white ">a graphic designer, video editor, game asset creator, UI/UX designer, front-end developer, and content creator.</h3>
                 <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 mt-5 text-lg sm:text-xl md:text-2xl h-auto sm:h-20 w-full">
                     <a
                         href={cv}

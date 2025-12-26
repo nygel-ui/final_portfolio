@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="w-full flex flex-col md:flex-row items-center justify-between py-4 px-4 md:px-8 bg-white/5 backdrop-blur-md fixed top-0 left-0 z-50 shadow-2xl">
             <div className="text-2xl md:text-3xl font-bold text-white tracking-widest font-satoshi flex-1 text-center md:text-left">
-                J.<span className="text-blue-400">WALTZ</span>
+                Dheyvid<span className="text-blue-400">Creatives</span>
             </div>
             {/* Hamburger for mobile */}
             <button

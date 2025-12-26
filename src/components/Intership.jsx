@@ -18,12 +18,9 @@ const Intership = () => {
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">About Essensa Naturale Inc.</h1>
 
                 <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
-                    Essensa Naturale Inc. is a Philippine-based corporation established in 2009, engaged in the sales and distribution of health, wellness, cosmetic, and household products. The company operates under a multi-level marketing (MLM) business model that promotes entrepreneurship by providing training, support, and business opportunities to its members.
+                    Toyota Marilao, Bulacan Inc. is an authorized Toyota dealership and service center located in Marilao, Bulacan, providing new vehicle sales and comprehensive after-sales services focused on quality and customer satisfaction. The company advocates environmental sustainability and community development by promoting eco-friendly practices, energy-efficient facilities, and initiatives that support local growth and responsible automotive service.
                 </p>
 
-                <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed mt-4">
-                    Guided by its advocacy for an “Organic Way of Living,” Essensa Naturale is recognized as a pioneer in offering organic, non-toxic, and all-natural products in the Philippines. By sourcing high-quality raw materials from trusted global partners, the company ensures that its products meet Filipino standards for safety and effectiveness. Its flagship product, Essensa Buah Merah Mix, has gained strong recognition among health-conscious consumers for its wellness benefits.
-                </p>
             </div>
         </section>
     );

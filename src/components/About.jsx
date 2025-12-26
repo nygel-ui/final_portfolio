@@ -25,7 +25,7 @@ const About = () => {
                 >
                     <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">About Me</h1>
                     <p className="text-gray-300 text-base sm:text-lg md:text-2xl leading-relaxed">
-                        I'm Johne Walter Almonacid — a front-end developer, UI/UX designer, and multimedia creator. I love crafting websites, designing smooth user experiences, and creating visuals and videos that tell a story.
+                        I'm Dheyvid Kyle Pe — a graphic designer, video editor, game asset creator, UI/UX designer, front-end developer, and content creator. I specialize in crafting visually engaging designs, intuitive user experiences, and digital content that brings ideas to life.
                     </p>
                 </div>
             </div>
