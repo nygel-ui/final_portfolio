@@ -10,8 +10,8 @@ import { useFadeInOnScroll } from '../Hook';
 const categories = [
                     'Graphics', 
                     // 'Illustrator', 
-                    'Videos', 
-                    'After Effects',
+                    // 'Videos', 
+                    // 'After Effects',
                     // 'Figma', 
                     // 'Code'
                     
