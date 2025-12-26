@@ -10,8 +10,8 @@ import Pearl from '../../assets/photoshop/Pearlofashen.png';
 // import Research from '../../assets/photoshop/seminar.png';
 import Love from '../../assets/photoshop/love.png';
 import Pairofpuff from '../../assets/photoshop/pairofpuff.png';
-import Pairofpuff2 from '../../assets/photoshop/pairofpuff2.png';
-import Mallow from '../../assets/photoshop/valentines.png';
+// import Pairofpuff2 from '../../assets/photoshop/pairofpuff2.png';
+// import Mallow from '../../assets/photoshop/valentines.png';
 import poster1 from '../../assets/Essensa/Poster/Apple promo.png'
 import poster2 from '../../assets/Essensa/Poster/EBPfriday3_2.png'
 import poster3 from '../../assets/Essensa/Poster/EBPfriday3.3png.png'
@@ -40,10 +40,10 @@ const photoshopProjects = [
     { title: 'Best GameDev Poster: FUN=JAVA', image: Oreo },
     { title: 'GameDev Poster: The Rise Of Demon King', image: Pearl },
     // { title: 'Research Writing Seminar', image: Research },
-    { title: 'Love Every Bite', image: Love },
-    { title: 'Pair of Puff', image: Pairofpuff },
-    { title: 'Pair of Puff2', image: Pairofpuff2 },
-    { title: 'Mallow in Love with You', image: Mallow },
+    { title: 'GameDev Poster: THAUMATERRA', image: Love },
+    { title: 'PC CENTRAL: Pubmat Poster', image: Pairofpuff },
+    // { title: 'Pair of Puff2', image: Pairofpuff2 },
+    // { title: 'Mallow in Love with You', image: Mallow },
 ];
 
 
