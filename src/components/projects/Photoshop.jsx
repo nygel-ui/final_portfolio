@@ -7,7 +7,7 @@ import Dare from '../../assets/photoshop/postermallow.png';
 import Mango from '../../assets/photoshop/mango.png';
 import Oreo from '../../assets/photoshop/oreo.png';
 import Pearl from '../../assets/photoshop/Pearlofashen.png';
-import Research from '../../assets/photoshop/seminar.png';
+// import Research from '../../assets/photoshop/seminar.png';
 import Love from '../../assets/photoshop/love.png';
 import Pairofpuff from '../../assets/photoshop/pairofpuff.png';
 import Pairofpuff2 from '../../assets/photoshop/pairofpuff2.png';
@@ -24,22 +24,22 @@ import poster9 from '../../assets/Essensa/Poster/NDOfriday3.png'
 
 const photoshopProjects = [
     { title: 'Toyota Marilao Bulacan Company ID lace', image: poster1 },
-    { title: 'Hilux Pubmat', image: poster2 },
-    { title: 'Bonifacio Day Pubmat', image: poster3 },
-    { title: 'EBP Friday Promo 3', image: poster4 },
-    { title: 'Glykozee Promo 1', image: poster5 },
-    { title: 'Glykozee Promo 2', image: poster6 },
-    { title: 'NDO Promo 1', image: poster7 },
-    { title: 'NDO Promo 2', image: poster8 },
-    { title: 'Marshmallows — Made for Holiday Memories', image: Marshmallows },
-    { title: 'Chicken Pastil', image: Chicken },
-    { title: 'Rocky Road', image: Rocky },
-    { title: 'Berry Biscuit', image: Berry },
-    { title: 'Dare to Try Something New', image: Dare },
-    { title: 'Mango Graham', image: Mango },
-    { title: 'Oreo Crumble', image: Oreo },
-    { title: 'Pearl of Ashen', image: Pearl },
-    { title: 'Research Writing Seminar', image: Research },
+    { title: 'Toyota Marilao Bulacan Pubmat:Hilux Pubmat', image: poster2 },
+    { title: 'Research Seminar Pubmat', image: poster3 },
+    { title: 'Toyota Marilao Bulacan Pubmat: Looking for intern', image: poster4 },
+    { title: 'POPEYES commercial poster', image: poster5 },
+    { title: 'Toyota Marilao Bulacan Pubmat: Bonifacio Day', image: poster6 },
+    { title: 'Toyota Marilao Bulacan Pubmat: All Saints & All Souls Day ', image: poster7 },
+    { title: 'Pubmat Poster Draft', image: poster8 },
+    { title: 'Toyota Marilao Bulacan Pubmat: Marcelo Del Pilar', image: Marshmallows },
+    { title: 'Game 2d Card Asset: The Last Dose', image: Chicken },
+    { title: 'GameDev Poster: THAUMATERRA', image: Rocky },
+    { title: 'Commision Magazine Poster', image: Berry },
+    { title: 'Mustang Draft Pubmat', image: Dare },
+    { title: 'Porshe 911 Draft Pubmat', image: Mango },
+    { title: 'Best GameDev Poster: FUN=JAVA', image: Oreo },
+    { title: 'GameDev Poster: The Rise Of Demon King', image: Pearl },
+    // { title: 'Research Writing Seminar', image: Research },
     { title: 'Love Every Bite', image: Love },
     { title: 'Pair of Puff', image: Pairofpuff },
     { title: 'Pair of Puff2', image: Pairofpuff2 },
